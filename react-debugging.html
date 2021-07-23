@@ -55,7 +55,6 @@
               <Card
                 drawCard={this.drawCard}
                 shuffle={this.shuffle}
-                hand={this.state.hand}
               />
             </>
           )
@@ -80,10 +79,10 @@
           }
           return(
             <>
-              <button onClick={this.props.drawCard}>
+              <button onClick={}>
                 Click to Draw a Card
               </button>
-              <button onClick={this.props.shuffle}>
+              <button onClick={shuffle}>
                 Return Cards and Shuffle Deck
               </button>
               <div style={handStyles}>
