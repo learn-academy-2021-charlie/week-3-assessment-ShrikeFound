@@ -217,6 +217,6 @@ const rollingSum = (array) =>{
         //add 0.
         return [...newArray,valueFromOldArray + (newArray.length> 0 ? newArray[previousIndex] : 0)]
     },[])
-    console.log(result)
+    // console.log(result)
     return result
 }
