@@ -36,6 +36,11 @@ describe("fibonaccify",() =>{
 
 })
 
+
+
+// b) Create the function that makes the test pass.
+
+
 // function takes a number
 // for loop using number as limit (minimum of 2)
 // have array with starting values of 1 and 1 
@@ -78,19 +83,17 @@ const fibonaccify = (limit) =>{
         //index of last element and penultimate element
         let lastElementIndex = results.length-1
         let penultimateElementIndex = results.length-2
-        
-        results.push(results[lastElementIndex]+results[penultimateElementIndex])
+
+        //this it's clearer actually to have a variable for the sum then push that in.
+        const sum = results[lastElementIndex]+results[penultimateElementIndex]
+
+        results.push(sum)
     }
     
     //giving the newly created array back
     return results
 
 }
-
-
-
-// b) Create the function that makes the test pass.
-
 
 
 // --------------------2) Create a function that takes in an array and returns a new array of only odd numbers sorted from least to greatest.
@@ -122,10 +125,12 @@ const sortedOdd = (array) =>{
     // AND
     //check if number is even
     //use Math.abs just in case number is negative
+        //I actually don't need to use Math.Abs and am silly. I could just check to see if the result is not 0. 
     // sort from least to greatest
 
     //store here for posterity and console.logging
-    const result = array.filter(placeholderForWhateverElementWeAreCurrentlyLookingAt => typeof placeholderForWhateverElementWeAreCurrentlyLookingAt === "number" && Math.abs(placeholderForWhateverElementWeAreCurrentlyLookingAt) % 2 === 1  ).sort((a,b) => a-b)
+    //shortening variable from "placeholderForWhateverElementWeAreCurrentlyLookingAt" to "ç". for readability. 
+    const result = array.filter(ç => typeof ç === "number" && Math.abs(ç) % 2 === 1  ).sort((a,b) => a-b)
     
     // check what we're getting back when array doesn't give back negative numbers
     // console.log(result)
@@ -184,7 +189,7 @@ describe("rollingSum",()=>{
 //but I want to try the logic without a reduce function first.
 
 //function takes an array
-//placeholder function
+//placeholder array
 //for each element in the original array,
 //new element in new array is sum of element in original array 
 //plus value of element of previous index at new array.
