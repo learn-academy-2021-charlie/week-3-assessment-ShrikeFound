@@ -81,9 +81,8 @@ const fibonaccify = (limit) =>{
     while (results.length < limit){
         
         //index of last element and penultimate element
-        let lastElementIndex = results.length-1
-        let penultimateElementIndex = results.length-2
-
+        const lastElementIndex = results.length-1
+        const penultimateElementIndex = results.length-2
         //this it's clearer actually to have a variable for the sum then push that in.
         const sum = results[lastElementIndex]+results[penultimateElementIndex]
 
