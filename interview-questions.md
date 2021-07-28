@@ -18,14 +18,11 @@ Then, research the question to expand on your answer. Even if you feel you have 
   the .call() seems neat; It lets you call a function and set the context to another object at the same time.
 
 
-
-
 ### 2. What is yarn? What file(s) are modified in a React application when you run yarn?
 
   **Your answer:** yarn is a package manager; It handles the documentation of any packages our project requires and can take care of the installation when we ask it to.
 
   **Researched answer:** yarn also keeps a record of which versions of particular packages we install and will warn us if the wrong versions are used.
-
 
 
 ### 3. What are props in React?
@@ -35,21 +32,17 @@ Then, research the question to expand on your answer. Even if you feel you have 
   **Researched answer:** When we're using functional components, we can destructure the props a component receives so we can use individual variables instead of `props.variable`. After some searching I've found you can do the same with class components, so I tested it out with the `react-debugging.html` app. Works great!
 
 
-
 ### 4. What is JSX?
 
   **Your answer:** JSX is an extension to javascript that allows us to write HTML directly into our code. It is still javascript, it just lets us write code that is easier for us to understand.
 
   **Researched answer:** because JSX is not normal javascript syntax, we need to use a javascript compiler like Babel. Babel will take the JSX and compile it into useable javascript.
 
-
-
 ### 5. What is a DOM event?
 
   **Your answer:** any event that happens on the page, e.g. mouse clicks, mouse movement, page loading, keypresses, etc. We can create listeners for these events in javascript that then complete tasks for us. For example, we can listen for a keypress, and when a key is pressed we can perform some logic using javascript (like checking which key it is and running different functions depending on which key was pressed). Information about the event itself is passed as an object that we can access through these listeners.
 
   **Researched answer:** the `event` that react works with is actually a synthetic event that wraps around the normal dom event. This has the benefit of normalizing events so that react events behave the same across browsers. 
-
 
 
 ### 6. STRETCH: What is an anonymous function in JavaScript?

@@ -55,7 +55,6 @@
               <Card
                 drawCard={this.drawCard}
                 shuffle={this.shuffle}
-                hand={this.state.hand}
               />
             </>
           )
@@ -82,7 +81,9 @@
           }
           return(
             <>
+
               <button onClick={drawCard}>
+
                 Click to Draw a Card
               </button>
               <button onClick={shuffle}>
