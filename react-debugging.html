@@ -64,6 +64,8 @@
       // file: src/components/Card.js
       class Card extends React.Component{
         render(){
+          const {drawCard,shuffle} = this.props
+
           // No need to change the handStyles or cardStyles variables
           let handStyles = {
             display: "flex",
@@ -79,7 +81,9 @@
           }
           return(
             <>
-              <button onClick={}>
+
+              <button onClick={drawCard}>
+
                 Click to Draw a Card
               </button>
               <button onClick={shuffle}>
